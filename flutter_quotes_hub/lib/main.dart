@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
-import './fav_quotes.dart';
-import 'package:share/share.dart';
+import 'package:flutter_web/material.dart';
+import 'package:flutter_quotes_hub/fav_quotes.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget{
@@ -130,7 +129,6 @@ class MyHomePage extends State<HomePage>{
                     addToFav(quotes[index].toString());
                   }),
                   onLongPress: (){
-                    Share.share(quotes[index].toString());
                   },
                 ),
               );
